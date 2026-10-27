@@ -89,7 +89,7 @@ footer{background:#090909;color:#d9bd6b;text-align:center;padding:24px 15px;bord
     <div class="field"><label for="plot">Plot Size</label><input id="plot" name="plot" placeholder="e.g. 1200 sqft" required></div>
     <div class="field"><label for="package">Select Package</label><select id="package" name="package" required><option value="">Choose a package</option><option>Classic</option><option>Premium</option><option>Elite</option><option>Not sure yet</option></select></div>
     <div class="field"><label for="message">Project details (optional)</label><textarea id="message" name="message" placeholder="Tell us a little about your dream home"></textarea></div>
-    <button class="btn" type="submit">REQUEST FREE QUOTE</button><p class="form-note">This opens your email app with your enquiry ready to send.</p>
+    <button class="btn" type="submit">REQUEST FREE QUOTE</button><p class="form-note">This opens WhatsApp with your enquiry ready to send.</p>
   </form>
 </div></section>
 </main>
@@ -100,7 +100,19 @@ toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');tog
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
 document.querySelectorAll('[data-package]').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#package').value=b.dataset.package;}));
 document.querySelector('#year').textContent=new Date().getFullYear();
-document.querySelector('#quoteForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget);const subject=encodeURIComponent('Free construction quote request - '+f.get('name'));const body=encodeURIComponent('Name: '+f.get('name')+'\\nPhone: '+f.get('phone')+'\\nPlot size: '+f.get('plot')+'\\nPackage: '+f.get('package')+'\\nProject details: '+(f.get('message')||'Not provided'));window.location.href='mailto:brixon74@gmail.com?subject='+subject+'&body='+body;});
+document.querySelector('#quoteForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=new FormData(e.currentTarget);
+  const whatsappNumber='919344299347'; // country code + number, no + or spaces
+  const text=
+    '*New Free Quote Request*\n\n'+
+    'Name: '+f.get('name')+'\n'+
+    'Phone: '+f.get('phone')+'\n'+
+    'Plot size: '+f.get('plot')+'\n'+
+    'Package: '+f.get('package')+'\n'+
+    'Project details: '+(f.get('message')||'Not provided');
+  window.open('https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(text),'_blank');
+});
 </script>
 </body>
 </html>
