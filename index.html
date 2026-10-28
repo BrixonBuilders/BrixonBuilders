@@ -1,118 +1,1226 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keyword" content="Brixon Builders, Contruction">
+
+<title>Brixon Builders | Official Website</title>
+
 <meta name="description" content="Brixon Builders — residential construction, architectural planning, interiors and turnkey home building in Tamil Nadu.">
-<title>Brixon Builders</title>
+<meta name="keywords" content="Brixon Builders, construction, house construction, home building, architecture, Tamil Nadu">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#101010">
+
+<!-- Google Search favicon / website logo -->
+<link rel="icon" type="image/png" sizes="48x48"
+href="https://brixonbuilders.github.io/BrixonBuilders/b-logo.png">
+<link rel="icon" type="image/png"
+href="https://brixonbuilders.github.io/BrixonBuilders/b-logo.png">
+<link rel="apple-touch-icon"
+href="https://brixonbuilders.github.io/BrixonBuilders/b-logo.png">
+
+<!-- Google structured data: website and company logo -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Brixon Builders",
+      "url": "https://brixonbuilders.github.io/BrixonBuilders/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Brixon Builders",
+      "url": "https://brixonbuilders.github.io/BrixonBuilders/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://brixonbuilders.github.io/BrixonBuilders/b-logo.png",
+        "width": 512,
+        "height": 512
+      }
+    }
+  ]
+}
+</script>
+
 <style>
-:root{--gold:#dcae32;--gold2:#f0c64d;--black:#101010;--ink:#171717;--muted:#686868;--paper:#f7f7f7;--white:#fff;--max:1240px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(var(--max),92%);margin:auto}
-header{height:104px;background:var(--black);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #292929}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand img{width:135px;height:90px;object-fit:contain;display:block}.navlinks{display:flex;align-items:center;gap:30px;font-weight:700}.navlinks a{transition:color .2s}.navlinks a:hover,.navlinks a.active{color:var(--gold2)}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#111;border:0;border-radius:7px;padding:14px 24px;font-weight:800;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{background:var(--gold2);transform:translateY(-2px)}.btn.outline{background:transparent;border:2px solid #fff;color:#fff}.menu-toggle{display:none;background:transparent;border:1px solid #555;color:#fff;border-radius:6px;padding:8px 12px;font-size:22px}
-.hero{background:#111;color:#fff;min-height:560px;position:relative;isolation:isolate;display:flex;align-items:center;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:url('hero-home.jpg') center 48%/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.97) 0%,rgba(0,0,0,.85) 32%,rgba(0,0,0,.3) 65%,rgba(0,0,0,.05) 100%)}.hero-content{max-width:660px;padding:70px 0}.eyebrow{color:var(--gold2);font-weight:800;letter-spacing:.06em;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,5.5vw,5rem);line-height:.99;letter-spacing:-.035em;margin:14px 0 18px;text-transform:uppercase}.hero h2{font-size:clamp(1.25rem,2.3vw,2rem);color:var(--gold2);margin:0 0 18px}.hero p{font-size:1.1rem;max-width:530px;color:#f1f1f1}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-.trust{background:#111;color:#fff;padding:25px 0 34px}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:850px;margin:auto}.trust-item{border:1px solid var(--gold);border-radius:10px;text-align:center;padding:18px 14px;font-weight:700}.trust-item .symbol{display:block;color:var(--gold2);font-size:1.7rem;margin-bottom:4px}
-section{padding:78px 0}.section-head{text-align:center;margin-bottom:38px}.section-head h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.1;margin:0 0 10px;text-transform:uppercase;color:#101010}.section-head p{font-size:1.25rem;color:#b58a20;font-weight:700;margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-panel{background:#111;color:#fff;padding:38px;border-radius:12px}.about-panel h3{font-size:1.8rem;margin:0 0 14px}.gold{color:var(--gold2)}.check-list{padding:0;list-style:none}.check-list li{margin:12px 0}.check-list li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:10px}.services{background:#f6f6f6}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.service-card{background:#fff;border-radius:9px;padding:28px 20px;text-align:center;box-shadow:0 8px 18px #00000012;transition:transform .2s}.service-card:hover{transform:translateY(-5px)}.service-icon{font-size:3.1rem;color:var(--gold);line-height:1.2}.service-card h3{font-size:1.2rem;margin:16px 0 6px}.service-card p{margin:0;color:#444}
-.packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch}.package{background:#fff;border:1px solid #eee;border-radius:6px;padding:30px 28px;box-shadow:0 10px 28px #00000012;position:relative}.package.featured{background:#101010;color:#fff;border:4px solid var(--gold);transform:translateY(-8px)}.popular{position:absolute;top:-22px;left:50%;transform:translateX(-50%);background:var(--gold);color:#111;border-radius:30px;padding:7px 22px;font-weight:900;white-space:nowrap}.package h3{text-align:center;text-transform:uppercase;font-size:1.7rem;margin:10px 0}.price{text-align:center;color:#b98d1e;font-weight:900;font-size:clamp(1.7rem,2.5vw,2.4rem);margin:0 0 20px;white-space:nowrap}.package ul{padding-left:19px;min-height:132px}.package li{margin:9px 0}.package .btn{width:100%;margin-top:14px}.fineprint{text-align:center;color:#555;margin:32px 0 0}
-.projects{background:#f8f8f8}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.project-card{overflow:hidden;border-radius:13px;background:#111;box-shadow:0 8px 18px #00000016}.project-card img{display:block;width:100%;aspect-ratio:1.7;object-fit:cover;transition:transform .35s}.project-card:hover img{transform:scale(1.04)}.project-caption{padding:13px 15px;color:#f4cd64;text-align:center;font-weight:800}
-.contact{background:#101010;color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.contact h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.05;margin:0 0 18px}.contact-sub{color:var(--gold2);font-size:1.4rem;font-weight:800}.contact-info{margin-top:32px;display:grid;gap:18px}.info-row{display:flex;gap:16px;align-items:flex-start}.info-icon{font-size:1.7rem;color:var(--gold2);width:34px}.info-row strong{display:block;font-size:1.1rem}.quote-form{background:#fff;color:#111;border-radius:15px;padding:34px;box-shadow:0 18px 50px #00000030}.quote-form h3{font-size:2rem;margin:0 0 20px}.field{margin-bottom:14px}.field label{display:block;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-radius:5px;background:#f8f8f8}.field textarea{min-height:90px;resize:vertical}.quote-form .btn{width:100%;padding:16px}.form-note{font-size:.9rem;color:#555;margin:12px 0 0}
-footer{background:#090909;color:#d9bd6b;text-align:center;padding:24px 15px;border-top:1px solid #282828}footer strong{color:var(--gold2)}
-@media(max-width:950px){.navlinks{gap:16px}.navlinks .btn{padding:11px 14px}.brand img{width:112px}.service-grid{grid-template-columns:repeat(2,1fr)}.packages-grid{gap:15px}.package{padding:25px 18px}.project-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){header{height:82px}.brand img{height:74px;width:105px}.menu-toggle{display:block}.nav{gap:10px}.navlinks{display:none;position:absolute;top:81px;left:0;right:0;background:#111;padding:18px 5% 24px;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #333}.navlinks.open{display:flex}.navlinks a{padding:12px 0;border-bottom:1px solid #292929}.navlinks .btn{margin-top:15px}.hero{min-height:570px}.hero:before{background-position:58% center}.hero:after{background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.64))}.hero-content{padding:55px 0}.trust-grid{grid-template-columns:1fr;gap:12px;max-width:400px}section{padding:58px 0}.about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.service-grid{gap:14px}.service-card{padding:22px 12px}.packages-grid{grid-template-columns:1fr;gap:32px}.package.featured{transform:none;margin-top:12px}.package ul{min-height:0}.project-grid{grid-template-columns:1fr}.quote-form{padding:25px 20px}.contact-grid{gap:36px}}
-@media(max-width:400px){.service-grid{grid-template-columns:1fr}.actions .btn{width:100%}.hero h1{font-size:2.55rem}}
+:root {
+  --gold: #dcae32;
+  --gold2: #f0c64d;
+  --black: #101010;
+  --ink: #171717;
+  --muted: #686868;
+  --paper: #f7f7f7;
+  --white: #fff;
+  --max: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(var(--max), 92%);
+  margin: auto;
+}
+
+header {
+  height: 104px;
+  background: var(--black);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #292929;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.brand img {
+  width: 135px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.navlinks a {
+  transition: color .2s;
+}
+
+.navlinks a:hover,
+.navlinks a.active {
+  color: var(--gold2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold);
+  color: #111;
+  border: 0;
+  border-radius: 7px;
+  padding: 14px 24px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+
+.btn:hover {
+  background: var(--gold2);
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 22px;
+}
+
+.hero {
+  background: #111;
+  color: #fff;
+  min-height: 560px;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url('hero-home.jpg') center 48% / cover no-repeat;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.97) 0%,
+    rgba(0,0,0,.85) 32%,
+    rgba(0,0,0,.3) 65%,
+    rgba(0,0,0,.05) 100%
+  );
+}
+
+.hero-content {
+  max-width: 660px;
+  padding: 70px 0;
+}
+
+.hero-logo {
+  width: 300px;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.eyebrow {
+  color: var(--gold2);
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(2.7rem, 5.5vw, 5rem);
+  line-height: .99;
+  letter-spacing: -.035em;
+  margin: 14px 0 18px;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  font-size: clamp(1.25rem, 2.3vw, 2rem);
+  color: var(--gold2);
+  margin: 0 0 18px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 530px;
+  color: #f1f1f1;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.trust {
+  background: #111;
+  color: #fff;
+  padding: 25px 0 34px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.trust-item {
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  text-align: center;
+  padding: 18px 14px;
+  font-weight: 700;
+}
+
+.trust-item .symbol {
+  display: block;
+  color: var(--gold2);
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+}
+
+section {
+  padding: 78px 0;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-head h2 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.1;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: #101010;
+}
+
+.section-head p {
+  font-size: 1.25rem;
+  color: #b58a20;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.about-panel {
+  background: #111;
+  color: #fff;
+  padding: 38px;
+  border-radius: 12px;
+}
+
+.about-panel h3 {
+  font-size: 1.8rem;
+  margin: 0 0 14px;
+}
+
+.gold {
+  color: var(--gold2);
+}
+
+.check-list {
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  margin: 12px 0;
+}
+
+.check-list li:before {
+  content: "✓";
+  color: var(--gold);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.services {
+  background: #f6f6f6;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 9px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 8px 18px #00000012;
+  transition: transform .2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 3.1rem;
+  color: var(--gold);
+  line-height: 1.2;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin: 16px 0 6px;
+}
+
+.service-card p {
+  margin: 0;
+  color: #444;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.package {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 30px 28px;
+  box-shadow: 0 10px 28px #00000012;
+  position: relative;
+}
+
+.package.featured {
+  background: #101010;
+  color: #fff;
+  border: 4px solid var(--gold);
+  transform: translateY(-8px);
+}
+
+.popular {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: #111;
+  border-radius: 30px;
+  padding: 7px 22px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.package h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
+.price {
+  text-align: center;
+  color: #b98d1e;
+  font-weight: 900;
+  font-size: clamp(1.7rem, 2.5vw, 2.4rem);
+  margin: 0 0 20px;
+  white-space: nowrap;
+}
+
+.package ul {
+  padding-left: 19px;
+  min-height: 132px;
+}
+
+.package li {
+  margin: 9px 0;
+}
+
+.package .btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.fineprint {
+  text-align: center;
+  color: #555;
+  margin: 32px 0 0;
+}
+
+.projects {
+  background: #f8f8f8;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  overflow: hidden;
+  border-radius: 13px;
+  background: #111;
+  box-shadow: 0 8px 18px #00000016;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.7;
+  object-fit: cover;
+  transition: transform .35s;
+}
+
+.project-card:hover img {
+  transform: scale(1.04);
+}
+
+.project-caption {
+  padding: 13px 15px;
+  color: #f4cd64;
+  text-align: center;
+  font-weight: 800;
+}
+
+.contact {
+  background: #101010;
+  color: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+
+.contact-sub {
+  color: var(--gold2);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.contact-info {
+  margin-top: 32px;
+  display: grid;
+  gap: 18px;
+}
+
+.info-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 1.7rem;
+  color: var(--gold2);
+  width: 34px;
+}
+
+.info-row strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.quote-form {
+  background: #fff;
+  color: #111;
+  border-radius: 15px;
+  padding: 34px;
+  box-shadow: 0 18px 50px #00000030;
+}
+
+.quote-form h3 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+
+.field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.quote-form .btn {
+  width: 100%;
+  padding: 16px;
+}
+
+.form-note {
+  font-size: .9rem;
+  color: #555;
+  margin: 12px 0 0;
+}
+
+footer {
+  background: #090909;
+  color: #d9bd6b;
+  text-align: center;
+  padding: 24px 15px;
+  border-top: 1px solid #282828;
+}
+
+footer strong {
+  color: var(--gold2);
+}
+
+@media(max-width:950px) {
+  .navlinks {
+    gap: 16px;
+  }
+
+  .navlinks .btn {
+    padding: 11px 14px;
+  }
+
+  .brand img {
+    width: 112px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid {
+    gap: 15px;
+  }
+
+  .package {
+    padding: 25px 18px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:720px) {
+  header {
+    height: 82px;
+  }
+
+  .brand img {
+    height: 74px;
+    width: 105px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding: 18px 5% 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid #333;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navlinks a {
+    padding: 12px 0;
+    border-bottom: 1px solid #292929;
+  }
+
+  .navlinks .btn {
+    margin-top: 15px;
+  }
+
+  .hero {
+    min-height: 570px;
+  }
+
+  .hero:before {
+    background-position: 58% center;
+  }
+
+  .hero:after {
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,.94),
+      rgba(0,0,0,.64)
+    );
+  }
+
+  .hero-content {
+    padding: 55px 0;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 400px;
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .service-grid {
+    gap: 14px;
+  }
+
+  .service-card {
+    padding: 22px 12px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .package.featured {
+    transform: none;
+    margin-top: 12px;
+  }
+
+  .package ul {
+    min-height: 0;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-form {
+    padding: 25px 20px;
+  }
+
+  .contact-grid {
+    gap: 36px;
+  }
+}
+
+@media(max-width:400px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions .btn {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.55rem;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="container nav">
-    <a class="brand" href="#home" aria-label="Brixon Builders home"><img src="b-logo.png" alt="Brixon Builders logo"></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <a class="brand" href="#home" aria-label="Brixon Builders home">
+      <img src="b-logo.png" alt="Brixon Builders logo">
+    </a>
+
+    <button class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
       <a class="btn" href="#contact">GET FREE QUOTE</a>
     </nav>
   </div>
 </header>
+
 <main>
-<section class="hero" id="home"><div class="container"><div class="hero-content">
-  <img src="b-logo.png" alt="b" height="250px" width="300px">
-  <div class="eyebrow">Brixon Builders · Tamil Nadu</div>
-  <h1>We Build Your<br>Dream Home</h1>
-  <h2>Strong. Beautiful. On Time.</h2>
-  <p>Premium residential construction with transparent pricing, quality materials and weekly site updates.</p>
-  <div class="actions"><a class="btn" href="#contact">GET FREE QUOTE</a><a class="btn outline" href="#packages">VIEW PACKAGES · ₹1,999 ONWARDS</a></div>
-</div></div></section>
-<div class="trust"><div class="container trust-grid">
-  <div class="trust-item"><span class="symbol">✓</span>100% Transparent Pricing</div><div class="trust-item"><span class="symbol">⌂</span>Experienced Engineers</div><div class="trust-item"><span class="symbol">▦</span>On-Time Delivery</div>
-</div></div>
-<section id="about"><div class="container about-grid">
-  <div><div class="eyebrow">Welcome to Brixon Builders</div><h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.1">Building trust, one home at a time.</h2><p>From the first floor plan to the final finishing touches, we help turn your vision into a home that feels truly yours. Our team focuses on thoughtful planning, dependable materials and clear communication throughout the build.</p><p>Whether you're planning an individual house, a duplex or a luxury villa, we make the process easier to understand from day one.</p><a class="btn" href="#contact">TALK TO OUR TEAM</a></div>
-  <div class="about-panel"><h3>Why choose <span class="gold">Brixon?</span></h3><ul class="check-list"><li>Clear, package-based pricing</li><li>Planning and elevation support</li><li>Quality-focused construction</li><li>Regular project progress updates</li><li>Solutions tailored to your budget</li></ul></div>
-</div></section>
-<section class="services" id="services"><div class="container"><div class="section-head"><h2>Our Services</h2><p>Everything You Need To Build Your Dream Home</p></div>
-<div class="service-grid">
-  <article class="service-card"><div class="service-icon">⌂</div><h3>Individual House</h3><p>Your dream home on your land.</p></article>
-  <article class="service-card"><div class="service-icon">♜</div><h3>Luxury Villa</h3><p>Premium villas with modern design.</p></article>
-  <article class="service-card"><div class="service-icon">▥</div><h3>Duplex Homes</h3><p>Stylish duplex homes for your family.</p></article>
-  <article class="service-card"><div class="service-icon">⚿</div><h3>Turnkey Construction</h3><p>Plan-to-key full responsibility.</p></article>
-  <article class="service-card"><div class="service-icon">▦</div><h3>Architectural Planning</h3><p>2D floor plans and 3D elevations.</p></article>
-  <article class="service-card"><div class="service-icon">▤</div><h3>3D Elevation Design</h3><p>See your home before we build.</p></article>
-  <article class="service-card"><div class="service-icon">▱</div><h3>Interior Works</h3><p>Kitchen, bedroom and living interiors.</p></article>
-  <article class="service-card"><div class="service-icon">⚒</div><h3>Renovation & Remodeling</h3><p>Give your existing home a fresh start.</p></article>
-</div><div style="text-align:center;margin-top:32px"><a class="btn" href="#contact">GET FREE CONSULTATION</a></div></div></section>
-<section id="packages"><div class="container"><div class="section-head"><h2>Choose Your Perfect Package</h2><p>Per Sq.Ft Rate · Transparent & All Inclusive</p></div>
-<div class="packages-grid">
-  <article class="package"><h3>Classic</h3><div class="price">₹1,999 / sqft</div><ul><li>2D floor plan </li><li>3D front elevation</li><li>Basic Structural Drawing</li></ul><a class="btn" href="#contact" data-package="Classic">GET THIS PACKAGE</a></article>
-  <article class="package featured"><div class="popular">MOST POPULAR</div><h3 class="gold">Premium</h3><div class="price">₹2,299 / sqft</div><ul><li>2D Floor plan</li><li>3D Elevation(Standard)</li> <li>Structural Drawing</li><li>Electrical Layout</li><li>Plumbing Layout</li></ul><a class="btn" href="#contact" data-package="Premium">GET THIS PACKAGE</a></article>
-  <article class="package"><h3>Elite</h3><div class="price">₹2,499 / sqft</div><ul><li>2D Floor Plan</li><li>Premium 3D elevation</li><li>Electrical + Plumbing Layout</li><li>Structural Drawing</li><li>Soil Test Report</li></ul><a class="btn" href="#contact" data-package="Elite">GET THIS PACKAGE</a></article>
-</div><p class="fineprint">Price may vary based on site location and soil condition.<br>Contact us for a free site visit.</p></div></section>
-<section class="projects" id="projects"><div class="container"><div class="section-head"><h2>Our Projects</h2><p>Homes We Built With Pride</p></div>
-<div class="project-grid">
-  <article class="project-card"><img src="project-1.jpg" alt="Modern villa project"><div class="project-caption">Project 1 · Modern Villa, Palakkodu</div></article>
-  <article class="project-card"><img src="project-2.jpg" alt="Contemporary duplex home"><div class="project-caption">Project 2 · Duplex Home, Dharmapuri</div></article>
-  <article class="project-card"><img src="project-3.jpg" alt="Luxury villa project"><div class="project-caption">Project 3 · Luxury Villa, Salem</div></article>
-  <article class="project-card"><img src="project-4.jpg" alt="Individual house project"><div class="project-caption">Project 4 · Individual House, Hosur</div></article>
-  <article class="project-card"><img src="project-5.jpg" alt="Contemporary villa project"><div class="project-caption">Project 5 · Contemporary Villa, Krishnagiri</div></article>
-  <article class="project-card"><img src="project-6.jpg" alt="Family home project"><div class="project-caption">Project 6 · Family Home, Dharmapuri</div></article>
-</div><div style="text-align:center;margin-top:34px"><a class="btn" href="#contact">START YOUR PROJECT</a></div></div></section>
-<section class="contact" id="contact"><div class="container contact-grid">
-  <div><div class="eyebrow">Let's get started</div><h2>Let's Build Your<br><span class="gold">Dream Home</span><br>Together</h2><div class="contact-sub">Free Site Visit & Free Quotation</div>
-    <div class="contact-info">
-      <div class="info-row"><div class="info-icon">☎</div><div><strong>Phone</strong> <a href="tel:+919344299347">93442 99347</a><br><a href="tel:+916374812046">63748 12046</a></div></div>
-      <div class="info-row"><div class="info-icon">✉</div><div><strong>Email</strong><a href="mailto:brixon74@gmail.com">brixon74@gmail.com</a></div></div>
-      <div class="info-row"><div class="info-icon">⌖</div><div><strong>Address</strong>A-17, Thiru Vi Ka Industrial Estate,<br> SIDCO Industrial Estate, Guindy, Chennai,<br> Tamil Nadu-600032</div></div>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+
+      <img class="hero-logo"
+        src="b-logo.png"
+        alt="Brixon Builders company logo">
+
+      <div class="eyebrow">Brixon Builders · Tamil Nadu</div>
+
+      <h1>We Build Your<br>Dream Home</h1>
+
+      <h2>Strong. Beautiful. On Time.</h2>
+
+      <p>
+        Premium residential construction with transparent pricing,
+        quality materials and weekly site updates.
+      </p>
+
+      <div class="actions">
+        <a class="btn" href="#contact">GET FREE QUOTE</a>
+        <a class="btn outline" href="#packages">
+          VIEW PACKAGES · ₹1,999 ONWARDS
+        </a>
+      </div>
+
     </div>
   </div>
-  <form class="quote-form" id="quoteForm"><h3>Get Free Quote</h3>
-    <div class="field"><label for="name">Your Name</label><input id="name" name="name" placeholder="Enter your name" required></div>
-    <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required></div>
-    <div class="field"><label for="plot">Plot Size</label><input id="plot" name="plot" placeholder="e.g. 1200 sqft" required></div>
-    <div class="field"><label for="package">Select Package</label><select id="package" name="package" required><option value="">Choose a package</option><option>Classic</option><option>Premium</option><option>Elite</option><option>Not sure yet</option></select></div>
-    <div class="field"><label for="message">Project details (optional)</label><textarea id="message" name="message" placeholder="Tell us a little about your dream home"></textarea></div>
-    <button class="btn" type="submit">REQUEST FREE QUOTE</button><p class="form-note">This opens WhatsApp with your enquiry ready to send.</p>
-  </form>
-</div></section>
+</section>
+
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <span class="symbol">✓</span>
+      100% Transparent Pricing
+    </div>
+    <div class="trust-item">
+      <span class="symbol">⌂</span>
+      Experienced Engineers
+    </div>
+    <div class="trust-item">
+      <span class="symbol">▦</span>
+      On-Time Delivery
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container about-grid">
+
+    <div>
+      <div class="eyebrow">Welcome to Brixon Builders</div>
+
+      <h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.1">
+        Building trust, one home at a time.
+      </h2>
+
+      <p>
+        From the first floor plan to the final finishing touches,
+        we help turn your vision into a home that feels truly yours.
+        Our team focuses on thoughtful planning, dependable materials
+        and clear communication throughout the build.
+      </p>
+
+      <p>
+        Whether you're planning an individual house, a duplex or
+        a luxury villa, we make the process easier to understand
+        from day one.
+      </p>
+
+      <a class="btn" href="#contact">TALK TO OUR TEAM</a>
+    </div>
+
+    <div class="about-panel">
+      <h3>Why choose <span class="gold">Brixon?</span></h3>
+
+      <ul class="check-list">
+        <li>Clear, package-based pricing</li>
+        <li>Planning and elevation support</li>
+        <li>Quality-focused construction</li>
+        <li>Regular project progress updates</li>
+        <li>Solutions tailored to your budget</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Our Services</h2>
+      <p>Everything You Need To Build Your Dream Home</p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-icon">⌂</div>
+        <h3>Individual House</h3>
+        <p>Your dream home on your land.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">♜</div>
+        <h3>Luxury Villa</h3>
+        <p>Premium villas with modern design.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▥</div>
+        <h3>Duplex Homes</h3>
+        <p>Stylish duplex homes for your family.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⚿</div>
+        <h3>Turnkey Construction</h3>
+        <p>Plan-to-key full responsibility.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▦</div>
+        <h3>Architectural Planning</h3>
+        <p>2D floor plans and 3D elevations.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▤</div>
+        <h3>3D Elevation Design</h3>
+        <p>See your home before we build.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▱</div>
+        <h3>Interior Works</h3>
+        <p>Kitchen, bedroom and living interiors.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⚒</div>
+        <h3>Renovation &amp; Remodeling</h3>
+        <p>Give your existing home a fresh start.</p>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a class="btn" href="#contact">GET FREE CONSULTATION</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="packages">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Choose Your Perfect Package</h2>
+      <p>Per Sq.Ft Rate · Transparent &amp; All Inclusive</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <article class="package">
+        <h3>Classic</h3>
+        <div class="price">₹1,999 / sqft</div>
+
+        <ul>
+          <li>2D floor plan</li>
+          <li>3D front elevation</li>
+          <li>Basic Structural Drawing</li>
+        </ul>
+
+        <a class="btn" href="#contact" data-package="Classic">
+          GET THIS PACKAGE
+        </a>
+      </article>
+
+      <article class="package featured">
+        <div class="popular">MOST POPULAR</div>
+        <h3 class="gold">Premium</h3>
+        <div class="price">₹2,299 / sqft</div>
+
+        <ul>
+          <li>2D Floor plan</li>
+          <li>3D Elevation (Standard)</li>
+          <li>Structural Drawing</li>
+          <li>Electrical Layout</li>
+          <li>Plumbing Layout</li>
+        </ul>
+
+        <a class="btn" href="#contact" data-package="Premium">
+          GET THIS PACKAGE
+        </a>
+      </article>
+
+      <article class="package">
+        <h3>Elite</h3>
+        <div class="price">₹2,499 / sqft</div>
+
+        <ul>
+          <li>2D Floor Plan</li>
+          <li>Premium 3D elevation</li>
+          <li>Electrical + Plumbing Layout</li>
+          <li>Structural Drawing</li>
+          <li>Soil Test Report</li>
+        </ul>
+
+        <a class="btn" href="#contact" data-package="Elite">
+          GET THIS PACKAGE
+        </a>
+      </article>
+
+    </div>
+
+    <p class="fineprint">
+      Price may vary based on site location and soil condition.
+      <br>Contact us for a free site visit.
+    </p>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Our Projects</h2>
+      <p>Homes We Built With Pride</p>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <img src="project-1.jpg" alt="Modern villa project">
+        <div class="project-caption">
+          Project 1 · Modern Villa, Palakkodu
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="project-2.jpg" alt="Contemporary duplex home">
+        <div class="project-caption">
+          Project 2 · Duplex Home, Dharmapuri
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="project-3.jpg" alt="Luxury villa project">
+        <div class="project-caption">
+          Project 3 · Luxury Villa, Salem
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="project-4.jpg" alt="Individual house project">
+        <div class="project-caption">
+          Project 4 · Individual House, Hosur
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="project-5.jpg" alt="Contemporary villa project">
+        <div class="project-caption">
+          Project 5 · Contemporary Villa, Krishnagiri
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="project-6.jpg" alt="Family home project">
+        <div class="project-caption">
+          Project 6 · Family Home, Dharmapuri
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:34px">
+      <a class="btn" href="#contact">START YOUR PROJECT</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="eyebrow">Let's get started</div>
+
+      <h2>
+        Let's Build Your<br>
+        <span class="gold">Dream Home</span><br>
+        Together
+      </h2>
+
+      <div class="contact-sub">
+        Free Site Visit &amp; Free Quotation
+      </div>
+
+      <div class="contact-info">
+
+        <div class="info-row">
+          <div class="info-icon">☎</div>
+          <div>
+            <strong>Phone</strong>
+            <a href="tel:+919344299347">93442 99347</a><br>
+            <a href="tel:+916374812046">63748 12046</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-icon">✉</div>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:brixon74@gmail.com">
+              brixon74@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-icon">⌖</div>
+          <div>
+            <strong>Address</strong>
+            A-17, Thiru Vi Ka Industrial Estate,<br>
+            SIDCO Industrial Estate, Guindy, Chennai,<br>
+            Tamil Nadu-600032
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <form class="quote-form" id="quoteForm">
+      <h3>Get Free Quote</h3>
+
+      <div class="field">
+        <label for="name">Your Name</label>
+        <input id="name" name="name"
+          placeholder="Enter your name" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel"
+          placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="field">
+        <label for="plot">Plot Size</label>
+        <input id="plot" name="plot"
+          placeholder="e.g. 1200 sqft" required>
+      </div>
+
+      <div class="field">
+        <label for="package">Select Package</label>
+        <select id="package" name="package" required>
+          <option value="">Choose a package</option>
+          <option>Classic</option>
+          <option>Premium</option>
+          <option>Elite</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Project details (optional)</label>
+        <textarea id="message" name="message"
+          placeholder="Tell us a little about your dream home"></textarea>
+      </div>
+
+      <button class="btn" type="submit">
+        REQUEST FREE QUOTE
+      </button>
+
+      <p class="form-note">
+        This opens WhatsApp with your enquiry ready to send.
+      </p>
+    </form>
+
+  </div>
+</section>
+
 </main>
-<footer><strong>BRIXON BUILDERS</strong> © <span id="year">2026</span> All Rights Reserved</footer>
+
+<footer>
+  <strong>BRIXON BUILDERS</strong>
+  © <span id="year">2026</span> All Rights Reserved
+</footer>
+
 <script>
-const toggle=document.querySelector('.menu-toggle'), nav=document.querySelector('.navlinks');
-toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
-document.querySelectorAll('[data-package]').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#package').value=b.dataset.package;}));
-document.querySelector('#year').textContent=new Date().getFullYear();
-document.querySelector('#quoteForm').addEventListener('submit',e=>{
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.navlinks');
+
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', String(open));
+});
+
+nav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.querySelectorAll('[data-package]').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('#package').value =
+      button.dataset.package;
+  });
+});
+
+document.querySelector('#year').textContent =
+  new Date().getFullYear();
+
+document.querySelector('#quoteForm').addEventListener('submit', e => {
   e.preventDefault();
-  const f=new FormData(e.currentTarget);
-  const whatsappNumber='919344299347'; // country code + number, no + or spaces
-  const text=
-    '*New Free Quote Request*\n\n'+
-    'Name: '+f.get('name')+'\n'+
-    'Phone: '+f.get('phone')+'\n'+
-    'Plot size: '+f.get('plot')+'\n'+
-    'Package: '+f.get('package')+'\n'+
-    'Project details: '+(f.get('message')||'Not provided');
-  window.open('https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(text),'_blank');
+
+  const form = new FormData(e.currentTarget);
+  const whatsappNumber = '919344299347';
+
+  const message =
+    '*New Free Quote Request*\n\n' +
+    'Name: ' + form.get('name') + '\n' +
+    'Phone: ' + form.get('phone') + '\n' +
+    'Plot size: ' + form.get('plot') + '\n' +
+    'Package: ' + form.get('package') + '\n' +
+    'Project details: ' +
+    (form.get('message') || 'Not provided');
+
+  const whatsappURL =
+    'https://wa.me/' + whatsappNumber +
+    '?text=' + encodeURIComponent(message);
+
+  window.open(whatsappURL, '_blank');
 });
 </script>
+
 </body>
 </html>
