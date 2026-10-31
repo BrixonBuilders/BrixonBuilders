@@ -416,7 +416,7 @@
       margin: 32px 0 0;
     }
 
-    /* PROJECTS - UPDATED IMAGE SIZING */
+    /* PROJECTS */
 
     .projects {
       background: #f8f8f8;
@@ -437,8 +437,6 @@
       display: flex;
       flex-direction: column;
     }
-
-    /* All project images have equal dimensions */
 
     .project-card > img,
     .project-card > video,
@@ -756,8 +754,6 @@
       .package ul {
         min-height: 0;
       }
-
-      /* Mobile project images */
 
       .project-grid {
         grid-template-columns: 1fr;
@@ -1231,7 +1227,7 @@
           </div>
         </div>
 
-        <!-- QUOTE FORM -->
+        <!-- WHATSAPP QUOTE FORM -->
         <form class="quote-form" id="quoteForm">
 
           <h3>Get Free Quote</h3>
@@ -1242,6 +1238,7 @@
             <input
               id="name"
               name="name"
+              type="text"
               placeholder="Enter your name"
               required
             />
@@ -1275,10 +1272,10 @@
 
             <select id="package" name="package" required>
               <option value="">Choose a package</option>
-              <option>Classic</option>
-              <option>Premium</option>
-              <option>Elite</option>
-              <option>Not sure yet</option>
+              <option value="Classic">Classic</option>
+              <option value="Premium">Premium</option>
+              <option value="Elite">Elite</option>
+              <option value="Not sure yet">Not sure yet</option>
             </select>
           </div>
 
@@ -1290,16 +1287,15 @@
             <textarea
               id="message"
               name="message"
-              placeholder="Tell us a little about your dream home">
-            </textarea>
+              placeholder="Tell us a little about your dream home"></textarea>
           </div>
 
           <button class="btn" type="submit">
-            REQUEST FREE QUOTE
+            SEND ENQUIRY ON WHATSAPP
           </button>
 
           <p class="form-note">
-            This opens your email app with your enquiry ready to send.
+            Your enquiry will open in WhatsApp. Press Send to contact us.
           </p>
 
         </form>
@@ -1358,7 +1354,7 @@
       button.setAttribute("aria-label", "Play Project 1 video");
 
       button.innerHTML =
-        '<img src="project-1.jpg" alt="Modern villa project">' +
+        '<img src="project-1.jpeg" alt="Modern villa project">' +
         '<span class="project-play-icon" aria-hidden="true">▶</span>';
 
       project1Card.querySelector("video")?.replaceWith(button);
@@ -1410,7 +1406,7 @@
       new Date().getFullYear();
 
 
-    // QUOTE FORM EMAIL FUNCTIONALITY
+    // WHATSAPP QUOTE FORM FUNCTIONALITY
 
     document.querySelector("#quoteForm").addEventListener("submit", (e) => {
 
@@ -1418,22 +1414,24 @@
 
       const f = new FormData(e.currentTarget);
 
-      const subject = encodeURIComponent(
-        "Free construction quote request - " + f.get("name")
-      );
+      // Brixon Builders WhatsApp number
+      const whatsappNumber = "919344299347";
 
-      const body = encodeURIComponent(
-        "Name: " + f.get("name") +
-        "\nPhone: " + f.get("phone") +
-        "\nPlot size: " + f.get("plot") +
-        "\nPackage: " + f.get("package") +
-        "\nProject details: " +
-        (f.get("message") || "Not provided")
-      );
+      const message =
+        "🏠 *NEW CONSTRUCTION ENQUIRY - BRIXON BUILDERS*\n\n" +
+        "👤 Name: " + f.get("name") + "\n" +
+        "📞 Phone: " + f.get("phone") + "\n" +
+        "📐 Plot Size: " + f.get("plot") + "\n" +
+        "📦 Package: " + f.get("package") + "\n" +
+        "📝 Project Details: " +
+        (f.get("message").trim() || "Not provided") +
+        "\n\nThank you!";
 
-      window.location.href =
-        "mailto:brixon74@gmail.com?subject=" +
-        subject + "&body=" + body;
+      const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank");
 
     });
 
@@ -1441,3 +1439,4 @@
 
 </body>
 </html>
+
